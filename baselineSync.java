@@ -1,12 +1,15 @@
 /* Baseline synchronization method
  *
- * This code should be built into assembly and loaded into wireless Mote Runner devices.
+ * This code implements baseline synchronization method for the wireless Mote Runner [1] devises.
  * Upon launch the motes will start flashing in random order with the same time period.
- * Each time the mote flashes, it will aslo send radio beacon signal.
+ * Each time the mote flashes, it will send a radio beacon signal.
  * Upon receival of the beacon the mote will reset its period and flash immediately.
  * In such way a swarm of motes will synchronize their flashes in a couple of seconds.
  *
  * 2014 Naums Mogers
+ *
+ * References
+ * [1] IBM Mote Runner, http://www.zurich.ibm.com/moterunner/
  */
 
 package embs;
